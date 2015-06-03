@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/epub_page_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+
+    <LinearLayout
+            android:id="@+id/epub_title_LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#FFFFFF">
+
+        <LinearLayout
+                android:id="@+id/epub_toc_layout1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:background="@drawable/epub_ml_dj"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目录"
+                    android:textColor="#474747"
+                    android:textSize="15dip"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/epub_public_split"/>
+
+        <LinearLayout
+                android:id="@+id/epub_toc_layout2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:background="@drawable/epub_sq"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="书签"
+                    android:textColor="#474747"
+                    android:textSize="15dip"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/epub_public_split"/>
+
+        <LinearLayout
+                android:id="@+id/epub_toc_layout3"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:background="@drawable/epub_bj"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="书摘"
+                    android:textColor="#474747"
+                    android:textSize="15dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/epub_vPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:flipInterval="30"
+            android:background="#F0EFEA"
+            android:layout_below="@id/epub_title_LinearLayout"
+            android:persistentDrawingCache="animation"/>
+
+</RelativeLayout>

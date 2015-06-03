@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/epub_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000">
+
+    <LinearLayout
+            android:id="@+id/epub_navigate_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e0000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="9dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingRight="9dip">
+
+        <ImageView
+                android:id="@+id/epub_navigate_close"
+                android:layout_width="30dip"
+                android:layout_height="35dip"
+                android:padding="8dip"
+                android:layout_marginRight="15dip"
+                android:src="@drawable/epub_tb_fh"
+                android:contentDescription="@string/epub_back"
+                android:scaleType="fitXY"/>
+
+        <ImageView
+                android:id="@+id/epub_navigate_directory"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:padding="3dip"
+                android:src="@drawable/epub_ls_ml"
+                android:scaleType="fitXY"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+        <ImageView
+                android:id="@+id/epub_navigate_font"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:padding="5dip"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/epub_a2"
+                android:scaleType="fitXY"/>
+
+        <ImageView
+                android:id="@+id/epub_navigate_search"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginRight="10dip"
+                android:padding="7dip"
+                android:src="@drawable/epub_tb_ss"
+                android:scaleType="fitXY"/>
+
+        <ImageView
+                android:id="@+id/epub_navigate_mark"
+                android:layout_width="32dip"
+                android:padding="3dip"
+                android:layout_height="33dip"
+                android:background="@drawable/epub_sq_dj2"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/epub_navigate_settings"
+            android:layout_width="260dip"
+            android:layout_height="140dip"
+            android:layout_marginBottom="15dip"
+            android:layout_below="@id/epub_navigate_top"
+            android:background="@drawable/epub_ls_tck_dj"
+            android:layout_marginLeft="50dip"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="15dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+            <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:src="@drawable/epub_ls_ty"/>
+
+            <SeekBar
+                    android:id="@+id/epub_brightness_slider"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:maxHeight="3dip"
+                    android:progressDrawable="@drawable/epub_seek_bar"/>
+
+            <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:src="@drawable/epub_ls_ty"/>
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#fff"/>
+
+        <LinearLayout
+                android:id="@+id/epub_navigation_settings"
+                android:layout_width="match_parent"
+                android:layout_height="30.0dip"
+                android:background="@drawable/epub_list_selector_holo_light"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/epub_decrease_font"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="A-"
+                    android:textColor="#fff"
+                    android:textSize="25sp"/>
+
+            <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="20dip"
+                    android:background="#fff"/>
+
+            <Button
+                    android:id="@+id/epub_increase_font"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="A+"
+                    android:textColor="#fff"
+                    android:textSize="25sp"/>
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dip"
+                android:background="#fff"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip">
+
+            <ImageView
+                    android:id="@+id/ic_settings_day"
+                    android:layout_width="0dip"
+                    android:layout_height="30dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/epub_ls_rj"/>
+
+            <TextView
+                    android:layout_width="20dip"
+                    android:layout_height="match_parent"/>
+
+            <ImageView
+                    android:id="@+id/ic_settings_night"
+                    android:layout_width="0dip"
+                    android:layout_height="30dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/epub_ls_yj_dj"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/epub_navigate_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="#e0000000"
+            android:orientation="vertical"
+            android:paddingLeft="9dip"
+            android:paddingRight="9dip">
+
+        <com.retechcorp.android.epub.view.MySeekBar
+                android:id="@+id/epub_navigation_slider"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:maxHeight="1.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:visibility="visible"
+                android:paddingTop="4dip"
+                android:progressDrawable="@drawable/epub_seek_bar"/>
+        <ProgressBar
+                style="@style/ProgressBar_Mini"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dip"
+                android:layout_marginBottom="15dip"
+                android:background="#00000000"
+                android:id="@+id/epub_directory_pagesbar"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:indeterminate="false"/>
+    </LinearLayout>
+</RelativeLayout>

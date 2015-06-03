@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="epub_app_name">时光阅读-epub阅读器</string>
+    <string name="epub_replace">被替换的站位视图</string>
+    <string name="epub_action_settings">Settings</string>
+    <string name="epub_back">返回</string>
+
+</resources>

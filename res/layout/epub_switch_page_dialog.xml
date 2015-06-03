@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#b0000000"
+              android:gravity="bottom">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:background="#fff"
+            android:layout_gravity="center_vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:layout_height="wrap_content"
+                android:text="阅读进度同步"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:id="@+id/epub_progress_text"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="20dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您正在阅读"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/epub_progress_local_text"
+                    android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="云端进度"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/epub_progress_network_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="30dip"
+                    android:paddingRight="30dip"
+                    android:layout_height="40dip"
+                    android:background="@drawable/epub_blue_border_button"
+                    android:text="跳转到云端进度"
+                    android:layout_marginRight="20dip"
+                    android:id="@+id/epub_progress_jump"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:paddingLeft="30dip"
+                    android:paddingRight="30dip"
+                    android:background="@drawable/epub_blue_border_button"
+                    android:text="取消"
+                    android:id="@+id/epub_progress_back"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

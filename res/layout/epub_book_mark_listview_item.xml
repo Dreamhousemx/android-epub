@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dip">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/epub_mark_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="书籍书签创建日期"
+                android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/epub_mark_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书籍书签内容"
+            android:textSize="14sp"/>
+
+</LinearLayout>

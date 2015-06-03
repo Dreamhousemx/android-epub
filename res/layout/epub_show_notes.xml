@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/epub_open_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:padding="10dip"
+                android:gravity="center">
+
+    <TextView
+            android:id="@+id/epub_book_show_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/epub_notes_text_floating"
+            android:gravity="center"
+            android:layout_margin="20dip"
+            android:padding="10dip"
+            android:text="笔记"/>
+
+</RelativeLayout>
